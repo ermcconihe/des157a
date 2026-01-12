@@ -1,3 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
 body {
     background-color: darkcyan;
+    /* margin: 0; */
+    background-image: url(images/water.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+main {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+}
+
+#container {
+    max-height: 750px;
+    margin: auto;
+    /* display: flex; */
+    
+}
+
+h1 {
+    font-family: "Comforter";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    margin: 0px;
+    padding: 30px;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(180deg,rgba(141, 204, 219, 1) 0%, rgba(249, 247, 240, 0) 100%);
+}
+
+footer {
+    text-align: center;
+}
+
+article {
+    background-image: url(images/lily.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* max-width: 400px;
+    max-height: 400px; */
+    width: 350px;
+    height: 350px;
+    /* margin: auto; */
+    /* justify-content: center; */
+    align-content: center;
+
+
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+
 }
