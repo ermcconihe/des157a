@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Flavors", cursive;
+    font-family: "Flavors";
     font-weight: 400;
     font-style: normal;
     font-size: 2em;
@@ -43,7 +43,6 @@ h2 {
 
 p {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: #05242B;
@@ -51,7 +50,6 @@ p {
 
 a {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: #05242B;
@@ -76,12 +74,13 @@ article {
 nav ul li {
     list-style-type: none;
     padding-top: 5px;
-    line-height: 18px;
+    line-height: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     transition: font-size 1s ease;
+    min-height: 25px;
 }
 
 nav ul li a:hover {
