@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Experiment 1</title>
+    </head>
+
+    <body>
+        <h1>Experiment 1</h1>
+
+        <h2>open the console to see the code!</h2>
+
+        <script>
+            // this program prints all the numbers from 1 to 100, for numbers divisible by 3, it replaces it with fizz and those divisibly by 5 but not 3, they are replaced with buzz
+
+
+            // makes the loop, indicates the range, this is also the beginning of the sequence
+            for(var i=1; i<101; i++) {
+                
+                // selection statements: for those divisibly by 3, replace with fizz, have to specify that those dividible by 3 will equal 0
+                if( i % 3 === 0){
+                    console.log("fizz");
+                }
+
+                // for those divisibly by 5, replace with fizz, have to specify that those dividible by 5 will equal 0
+                else if ( i % 5 === 0){
+                    console.log("buzz");
+                }
+
+                // for the rest, just list the numbers
+                else {
+                    console.log (i);
+                }        
+            }
+
+        </script>
+
+
+    </body>
+</html>
