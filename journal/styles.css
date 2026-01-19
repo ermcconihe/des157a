@@ -1,0 +1,84 @@
+
+h1, h2, ul, p, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: darkcyan;
+    background-image: url(images/water.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    justify-items: center;
+}
+
+h1 {
+    font-family: "Flavors";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    color: #126363;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+h2 {
+    font-family: "Inter";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.6em;
+    color: #05242B;
+}
+
+time {
+    font-family: "Inter";
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #05242B;
+    font-size: 1.1em;
+    line-height: 26px;
+    padding-top: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article {
+    max-width: 600px;
+    background-color: aliceblue;
+    opacity: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px dotted #126363;
+}
+
+footer p {
+    padding: 5px;
+}
+
+a {
+    color: #05242B;
+}
+
+p a:hover {
+    color: darkcyan;
+}
