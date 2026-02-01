@@ -4,16 +4,72 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Experiment 2</title>
+        <style>
+            body {
+                background-color: antiquewhite;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        </style>
+        
+
     </head>
 
     <body>
 
+        <h1>Color Mixing</h1>
+
+        <p></p>
+
         <script>
 
-            var question = prompt()
+            //this experiment asks about colors combos and then if the color is correct, it will change the color of the text with the corresponding color
 
-            function colorQuestion();
+            var combo = ["red and yellow", "red and blue", "blue and yellow"]
 
+            
+            function randomInt( min, max ){
+                return Math.floor( ( max - min + 1) * Math.random() ) + min;
+            }
+            
+            var color = prompt(`What do you get when you mix ${combo[ randomInt(0,2) ]}?`, ""  ).toLowerCase();
+
+            if (color === "orange"){
+                document.querySelector('[background-color]').style.color = "orange";
+                document.querySelector('p').innerHTML = `${color} is correct!`;
+            } else if (color === "green"){
+                document.querySelector('p').style.color = "green";
+                document.querySelector('p').innerHTML = `${color} is correct!`;
+
+            } else if (color === "purple"){
+                document.querySelector('p').style.color = "purple";
+                document.querySelector('p').innerHTML = `${color} is correct!`;
+            } else {
+                document.querySelector('p').innerHTML = `that is not the answer`;    
+            }
+            
+
+
+                
+
+            
+
+            // for ( var i=0; i < combo.length; i++ ){
+                            
+            //             }
+
+            //         if (color === "orange"){
+            //             document.querySelector('background-color').style.color = "orange";
+            //             document.querySelector('p').innerHTML = `${color} is correct!`;
+            //         } else {
+            //             document.querySelector('p').innerHTML = `that is incorrect`;
+            //         }
 
         </script>
 
