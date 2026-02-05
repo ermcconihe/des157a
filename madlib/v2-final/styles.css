@@ -29,8 +29,7 @@ header {
     /* margin-top: auto;
     margin-bottom: auto; */
     /* align-items: center; */
-    /* background-color: rgb(255, 228, 196);
-    opacity: 80%; */
+    /* background-color: rgb(255, 228, 196); */
 }
 
 input, label {
@@ -116,12 +115,12 @@ input:focus {
     color: blue;
 }
 
-#madlib-questions {
+#questions {
     display: block;
     /* display: none; */
 }
 
-#madlib-output {
+#madlib {
     display: none;
     /* display: block; */
     max-width: 400px;
