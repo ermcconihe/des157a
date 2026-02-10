@@ -7,7 +7,7 @@
     const questions = document.querySelector('#questions');
     const formData = document.querySelectorAll("input[type=text]");
     // const selectData = document.querySelector('select');
-    formData.push(selectData);
+    // formData.push(selectData);
 
     myForm.addEventListener('submit', function(event){
         event.preventDefault();
