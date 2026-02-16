@@ -20,43 +20,58 @@
 <body>
 
     <div id="content">
-        <header>
-            <h1>Grocery Disaster</h1>
-            <h2>designed and coded by Emily-Mae McConihe</h2>
-            <h3>go back to the <a href="../../index.html">portal</a></h3>
-        </header>
+        <section id="header">
+            <header>
+                <h1>Grocery Disaster</h1>
+                <h2>designed and coded by Emily-Mae McConihe</h2>
+                <h3>go back to the <a href="../../index.html">portal</a></h3>
+            </header>
+        </section>
+        
 
         <main>
             <section id="questions">
                 <form id="form">
-                    <label for="present-verb">movement verb (present tense): </label><input type="text" id="present-verb">
-                    <label for="material">a material: </label><input type="text" id="material">
-                    <label for="weather">describe the weather: </label><input type="text" id="weather">
-                    <!-- <label for="weather">weather: </label>
-                        <select id="weather">
-                            <option value="">---</option>
-                            <option value="sunny">sunny</option>
-                            <option value="cloudy">cloudy</option>
-                            <option value="rainy">rainy</option>
-                            <option value="foggy">foggy</option>
-                            <option value="sweltering">sweltering</option>
-                            <option value="frigid">frigid</option>
-                            <option value="windy">windy</option>
-                            <option value="snowy">snowy</option>
-                        </select> -->
-                    <label for="animal">an animal (singular):</label><input type="text" id="animal">
-                    <label for="object">an object: </label><input type="text" id="object">
-                    <label for="verb1">a plural verb: </label><input type="text" id="verb1">
-                    <label for="verb2">another plural verb: </label><input type="text" id="verb2">
-                    <label for="number">number between 2 and 50: </label><input type="text" id="number">
-                    <label for="fruit">a fruit (plural): </label><input type="text" id="fruit">
-                    <input type="submit" value="discover what happened" id="submit">
+                    <div>
+                        <label for="present-verb">present tense verb (movement): </label><input type="text" id="present-verb">
+                        <label for="material">a material: </label><input type="text" id="material">
+                        <label for="weather">describe the weather: </label><input type="text" id="weather">
+                        <!-- <label for="weather">weather: </label>
+                            <select id="weather">
+                                <option value="">---</option>
+                                <option value="sunny">sunny</option>
+                                <option value="cloudy">cloudy</option>
+                                <option value="rainy">rainy</option>
+                                <option value="foggy">foggy</option>
+                                <option value="sweltering">sweltering</option>
+                                <option value="frigid">frigid</option>
+                                <option value="windy">windy</option>
+                                <option value="snowy">snowy</option>
+                            </select> -->
+                        <label for="animal">an animal (singular):</label><input type="text" id="animal">
+                        <label for="object">an object: </label><input type="text" id="object">
+                    </div>
+                    <div>
+                        <label for="verb1">a plural verb: </label><input type="text" id="verb1">
+                        <label for="verb2">another plural verb: </label><input type="text" id="verb2">
+                        <label for="number">number between 2 and 50: </label><input type="text" id="number">
+                        <label for="fruit">a fruit (plural): </label><input type="text" id="fruit">
+                        <input type="submit" value="discover what happened" id="submit">
+                    </div>
+                    
+                    
                 </form>
             </section>
 
 
             <section id="madlib">
+                <div id="output">
+                    
+                </div>
                 
+                <div id="again">
+                    <button id="submit-again">try again</button>
+                </div>
             </section>
             
 
