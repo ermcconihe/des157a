@@ -1,5 +1,5 @@
 (function(){
-    'read strict'
+    'use strict'
     console.log('reading js');
 
     const myForm = document.querySelector('#form');

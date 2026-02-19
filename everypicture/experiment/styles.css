@@ -1,0 +1,53 @@
+
+#photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    
+    /* justify-content: center; */
+}
+
+#layering {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#cabins-big, #trees {
+    position: absolute;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+#trees {
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 4s ease;
+}
+
+#cabins-big {
+    z-index: 1;
+}
+
+#layering:hover #trees {
+    opacity: 0;
+}
+
+
+
+#text-section {
+    display: block;
+    justify-items: center;
+
+}
+
+.show {
+    opacity: 1; 
+    transition: 1s; 
+}
