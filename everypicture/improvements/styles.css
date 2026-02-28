@@ -1,0 +1,161 @@
+
+p {
+    margin: 0px;
+    padding: 0px;
+    color: antiquewhite;
+    font-family: "Special Elite";
+    font-weight: 400;
+    font-style: normal;
+    width: 1240px;
+    margin: auto;
+}
+
+
+p {
+    margin-top: 5px ;
+    margin-bottom: 15px ;
+    font-size: 2.5em;
+}
+
+#firstline {
+    margin-top: 25px ;
+}
+
+body {
+    background-color: rgb(32, 20, 20);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* padding: 10px; */
+    border-radius: 5px;
+}
+
+.top {
+    /* border: 1px solid antiquewhite; */
+    box-shadow: 0px 0px 4px antiquewhite;
+}
+
+.bottom {
+    box-shadow: 0px 0px 4px antiquewhite;
+}
+
+.sections {
+    width: 1240px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10px; */
+}
+
+.cell {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tall {
+    height: 800px;
+}
+
+.short {
+    height: 450px;
+}
+
+.cell img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* js transitions */
+.fadeout {
+    opacity: 0;
+    transition: opacity 4s ease;
+}
+
+.fadein { 
+    opacity: 1;
+    transition: opacity 4s ease;
+}
+
+/* text overlays */
+
+#creek1 {
+    position: relative;
+}
+
+#creek-text {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    max-width: 580px;
+    text-shadow: -2px 2px black;
+    color: rgb(187, 220, 237);
+    font-size: 2em;
+}
+
+#dave {
+    position: relative;
+}
+
+#dave-text {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    max-width: 580px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: rgb(167, 218, 243);
+    /* color: rgb(156, 191, 209); */
+    font-size: 2em;
+}
+
+#swing2 {
+    position: relative;
+}
+
+#swing2-text {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    max-width: 580px;
+    text-shadow: -2px 2px black;
+    color: rgb(187, 220, 237);
+    /* color: rgb(248, 248, 248); */
+    font-size: 2em;
+}
+
+#end {
+    width: 1240px;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer{
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+    font-size: 1em;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    color: antiquewhite;
+}
+
+p a:hover {
+    color: rgb(187, 220, 237);
+}
+
+
+
+
+
