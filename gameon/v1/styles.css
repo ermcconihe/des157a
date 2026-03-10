@@ -1,0 +1,142 @@
+
+p, h1, h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: "Jacquard 24";
+    /* font-family: "New Rocker"; */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Jacquard 24";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    padding-left: 5px;
+}
+
+p {
+    font-family: "Underdog";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+body {
+    background-color: rgb(230, 198, 237);
+}
+
+#box {
+    margin: auto;
+    width: 1200px;
+    height: 700px;
+    background-color: rgb(134, 70, 49);
+    border: 10px outset rgb(147, 74, 74) ;
+
+}
+
+#container {
+    width: 1170px;
+    margin: auto;
+    padding-top: 15px;
+    /* grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-areas: 
+    "a a a a "
+    "h b d d "
+    "h c d d "
+    "h c e f "
+    "g g g g"
+    ;
+}
+
+header {
+    grid-area: a ;
+    border: 10px inset rgb(99, 50, 50);
+    background-color: rgb(117, 184, 184);
+    
+}
+
+#rules {
+    grid-area: h ;
+    border: 10px inset rgb(99, 50, 50);
+    background-color: rgb(206, 130, 167);
+}
+
+#player-1 {
+    grid-area: b ;
+    border: 10px inset rgb(99, 50, 50);
+    background-color: rgb(159, 149, 189);
+    height: 200px;
+}
+
+#player-2 {
+    grid-area: c ;
+    border: 10px inset rgb(99, 50, 50);
+    background-color: rgb(159, 149, 189);
+    height: 200px;
+}
+
+#playing-area {
+    grid-area: d ;
+    border: 10px inset rgb(99, 50, 50);
+    background-color: rgb(197, 133, 142);
+    /* height: 300px; */
+
+}
+
+#button-1 {
+    text-align: center;
+    grid-area: e ;
+    border: 10px inset rgb(99, 50, 50);
+    background-color: rgb(197, 133, 142);
+
+}
+
+#button-2 {
+    text-align: center;
+    grid-area: f ;
+    border: 10px inset rgb(99, 50, 50);
+    background-color: rgb(197, 133, 142);
+
+}
+
+#key {
+    grid-area: g ;
+    border: 10px inset rgb(99, 50, 50);
+    background-color: rgb(117, 184, 184);
+    height: 50px;
+
+}
+
+
+/* footer */
+footer{
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+    font-size: 1em;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    /* color: antiquewhite; */
+}
+
+p a:hover {
+    /* color: rgb(187, 220, 237); */
+}
