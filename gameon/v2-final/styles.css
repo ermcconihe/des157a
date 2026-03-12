@@ -74,6 +74,17 @@ p {
     background-color: rgb(168, 154, 136);
 }
 
+#start {
+    margin-left: 55px;
+    padding: 5px;
+    font-family: "Underdog";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    border: 10px outset rgb(99, 50, 50);
+    background-color: rgb(199, 188, 175);
+}
+
 body {
     background-color: rgb(230, 198, 237);
     background-image: url(images/background.jpg);

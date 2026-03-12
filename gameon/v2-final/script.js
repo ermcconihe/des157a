@@ -13,7 +13,9 @@
     const button2 = document.querySelector('#button-2');
     const images = document.querySelector('#images');
 
+    const start = document.querySelector('#start');
     const clinks = new Audio('audio/clinks.mp3');
+    const background = new Audio('audio/background.mp3');
 
     const gameData = {
         dice: ['1.png', '2.png', '3.png', 
@@ -131,13 +133,14 @@
     }
 
 
-    document.querySelector('#rollagain').addEventListener('click', function(){
+    button1.addEventListener('click', function(){
         clinks.play();
     });
 
-    document.querySelector('#roll').addEventListener('click', function(){
-        clinks.play();
+    start.addEventListener('click', function(){
+        background.play();
     });
+
 
 
 
