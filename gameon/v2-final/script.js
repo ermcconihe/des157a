@@ -8,10 +8,12 @@
     const p2score = document.querySelector('#p2-score');
     const p1turn = document.querySelector('#p1-turn');
     const p2turn = document.querySelector('#p2-turn');
-    // const actionArea = document.querySelector('#actions');
     const button1 = document.querySelector('#button-1');
     const button2 = document.querySelector('#button-2');
     const images = document.querySelector('#images');
+
+    const p1t = document.querySelector('#player-1 h2');
+    const p2t = document.querySelector('#player-2 h2');
 
     const start = document.querySelector('#start');
     const clinks = new Audio('audio/clinks.mp3');
@@ -50,9 +52,13 @@
         if (gameData.index == 0){
             p1turn.innerHTML = "<p>it's your turn</p>";
             p2turn.innerHTML = "";
+            p1t.className = 'h2-selection';
+            p2t.removeAttribute('class');
         } else {
             p2turn.innerHTML = "<p>it's your turn</p>";
             p1turn.innerHTML = "";
+            p2t.className = 'h2-selection';
+            p1t.removeAttribute('class');
         }
         
         feedback.innerHTML = '';
@@ -77,6 +83,8 @@
         //if two 1's are rolled
         if( gameData.rollSum === 2){
             feedback.innerHTML += "<p>two 1's! :( </p>";
+
+            gameData.score[gameData.index] = gameData.score[gameData.index] - 4;
         
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 
@@ -86,6 +94,7 @@
         //if either die is a 1
         else if( gameData.roll1 === 1 || gameData.roll2 === 1){
 
+            gameData.score[gameData.index] = gameData.score[gameData.index] - 2;
             button1.innerHTML = '';
             button2.innerHTML = '';
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
